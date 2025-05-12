@@ -18,8 +18,7 @@ function FerryPage() {
       });
       const data = await response.json();
       console.log("Ferry API response:", data);
-      setFerryData(data.response); 
-
+      setFerryData(data.response);
     } catch (err) {
       console.error("Error fetching ferry data:", err);
       setError(err);
@@ -45,16 +44,15 @@ function FerryPage() {
   }
 
   return (
-    <div>
-       {ferryData.map((ferry, index) => (
-      <div key={index}>
-        <h2>Vessel Name: {ferry.vessel}</h2>
-        <p>Operator Name: {ferry.operator}</p>
-        <p>Call Sign: {ferry.callsign}</p>
-        <p>Latitude: {ferry.lat}</p>
-        <p>Longitude: {ferry.lng}</p>
-        
-      </div>
+    <div className="ferry-container">
+      {ferryData.map((ferry, index) => (
+        <div key={index}>
+          <h2>Vessel Name: {ferry.vessel}</h2>
+          <p>Operator Name: {ferry.operator}</p>
+          <p>Call Sign: {ferry.callsign}</p>
+          <p>Latitude: {ferry.lat}</p>
+          <p>Longitude: {ferry.lng}</p>
+        </div>
       ))}
     </div>
   );

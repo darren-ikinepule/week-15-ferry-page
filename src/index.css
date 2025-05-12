@@ -1,3 +1,23 @@
-.joker-container {
-    font-size: 5rem;
+.vehicle-position {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+
 }
+.vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 200px;
+  box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.9);
+  padding: 20px;
+  margin: 5px;
+}
+

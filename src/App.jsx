@@ -1,5 +1,6 @@
 import React from 'react'
-import FerryPage  from './components/FerryPage'
+import VehiclePosition from './components/VehiclePosition'
+
 
 
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       
-     <FerryPage/>
+     <VehiclePosition/>
      
     </>
   )
