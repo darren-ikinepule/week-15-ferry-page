@@ -1,19 +1,17 @@
-import React from 'react'
-import VehiclePosition from './components/VehiclePosition'
-
-
+import React from "react";
+// import PostRequestApp from "./components/PostsRequestApp";
+// import GetRequestApp from "./components/GetRequestApp";
 
 
 function App() {
-  
-
   return (
     <>
-      
-     <VehiclePosition/>
-     
+    
+    
+     {/* <PostRequestApp />
+     <GetRequestApp/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

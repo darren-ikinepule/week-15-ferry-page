@@ -19,9 +19,11 @@ function FerryPage() {
       const data = await response.json();
       console.log("Ferry API response:", data);
       setFerryData(data.response);
+
     } catch (err) {
       console.error("Error fetching ferry data:", err);
       setError(err);
+
     } finally {
       setIsLoading(false);
     }
