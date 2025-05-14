@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NavBar from "./NavBar";
 
 function FerryPage() {
   const url = "https://pp-api.at.govt.nz/realtime/legacy/ferrypositions";
@@ -46,6 +47,8 @@ function FerryPage() {
   }
 
   return (
+    <>
+    <NavBar/>
     <div className="ferry-container">
       {ferryData.map((ferry, index) => (
         <div key={index}>
@@ -57,6 +60,7 @@ function FerryPage() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

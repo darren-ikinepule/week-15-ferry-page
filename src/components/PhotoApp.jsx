@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 
 export default function PhotoApp() {
   const [feedback, setFeedback] = useState("");
@@ -31,6 +32,7 @@ export default function PhotoApp() {
 
   return (
     <>
+    <NavBar />
       <h1>Take a Picture</h1>
       <img
         src="https://www.pbtech.co.nz/imgprod/C/A/CAMCNP0850__1.jpg"

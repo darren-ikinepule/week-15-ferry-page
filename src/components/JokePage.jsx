@@ -1,5 +1,5 @@
-
 import { useState } from "react";
+import NavBar from "./NavBar";
 
 const url = "https://official-joke-api.appspot.com/random_joke";
 
@@ -21,18 +21,21 @@ const JokePage = () => {
   const isFirstRender = !joke.setup && !isLoading;
 
   return (
-    <div className="joker-container">
-      {joke.setup && (
-        <div>
-          <p>{`${joke.setup}`}</p>
-          <p>{`${joke.punchline}`}</p>
-        </div>
-      )}
-      <p>{isFirstRender && "Click for a joke"}</p>
-      <p>{isLoading && "Loading..."}</p>
-      <button onClick={fetchRandomJoke}>New Joke!</button>
-    </div>
+    <>
+      <NavBar />
+      <div className="joker-container">
+        {joke.setup && (
+          <div>
+            <p>{`${joke.setup}`}</p>
+            <p>{`${joke.punchline}`}</p>
+          </div>
+        )}
+        <p>{isFirstRender && "Click for a joke"}</p>
+        <p>{isLoading && "Loading..."}</p>
+        <button onClick={fetchRandomJoke}>New Joke!</button>
+      </div>
+    </>
   );
 };
 
-export { JokePage };
+export default JokePage;

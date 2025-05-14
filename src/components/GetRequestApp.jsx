@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavBar from "./NavBar"; // Importing the NavBar component for navigation.
 
 export default function GetRequestApp() {
   // State variables using the useState hook:
@@ -37,6 +38,8 @@ export default function GetRequestApp() {
 
   // The JSX structure of the component:
   return (
+    <>
+    <NavBar/>
     <div className="max-w-3xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">
         Task 1: GET Request Assessment
@@ -103,5 +106,6 @@ export default function GetRequestApp() {
         )}
       </div>
     </div>
+    </>
   );
 }

@@ -2,11 +2,57 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+}
+
+.home-page {
+    
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #007bff; /* Blue background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+nav ul li a.active {
+    color: #ffcc00; /* Highlight active link */
+    border-bottom: 2px solid #ffcc00; /* Underline active link */
 }
 .camera {
     width: 200px;

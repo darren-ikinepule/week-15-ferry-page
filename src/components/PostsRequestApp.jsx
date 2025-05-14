@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavBar from "./NavBar"; // Importing the NavBar component for navigation.
 
 export default function PostRequestApp() {
   // State variables using useState:
@@ -60,6 +61,9 @@ export default function PostRequestApp() {
 
   // The JSX structure of the component:
   return (
+
+    <>
+    <NavBar/>  {/* Render the NavBar component for navigation. */}
     <div className="max-w-3xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">
         Task 2: POST Request Assessment
@@ -176,6 +180,7 @@ export default function PostRequestApp() {
         )}
       </div>
     </div>
+    </>
   );
 }
 
